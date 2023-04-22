@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html lang="en">
+
+    <head>
+        <meta charset="UTF-8">
+        <meta http-equiv="X-UA-Compatible" content="IE=edge">
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+        <link rel="preconnect" href="https://fonts.googleapis.com">
+        <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+        <link href="https://fonts.googleapis.com/css2?family=Open+Sans:ital@1&display=swap" rel="stylesheet">
+        <link rel="stylesheet" href="style.css">
+        <title>Lexical Analyser</title>
+    </head>
+
+    <body>
+
+        <header id="#">
+            <div class="header_container">
+                <img class="logo" src="Assets/logo.jpg" alt="Logo">
+                <h1 class="title">
+                    <strike><em>LEXICAL</em></strike> ANALYSER
+                </h1>
+            </div>
+        </header>
+
+        <section id="#">
+            
+            <div class="main_container">
+
+                <div class="input_container">
+                    <label class="input_label" for="code-input">Enter your code: </label>
+                    <textarea class="code-input" name="code-input" rows="10" cols="50"></textarea>
+                    <button onclick="analyze()">Submit</button>
+                </div>
+
+                <div class="output_container">
+
+                    <div class="output_container1">
+                        <label class="output_label1" for="token-output1">Operators :</label>
+                        <textarea class="token-output1" name="token-output" rows="15" cols="25" readonly></textarea>
+                    </div>
+
+                    <div class="output_container2">
+                        <label class="output_label2" for="token-output2">Keywords :</label>
+                        <textarea class="token-output2" name="token-output" rows="15" cols="25" readonly></textarea>
+                    </div>
+
+                    <div class="output_container3">
+                        <label class="output_label3" for="token-output3">Symbols :</label>
+                        <textarea class="token-output3" name="token-output" rows="15" cols="25" readonly></textarea>
+                    </div>
+
+                    <div class="output_container4">
+                        <label class="output_label4" for="token-output4">Identifier :</label>
+                        <textarea class="token-output4" name="token-output" rows="15" cols="25" readonly></textarea>
+                    </div>
+
+                </div>
+
+            </div>
+
+        </section>
+
+        <footer id="#">
+            <div class="last_container">
+                <p>&copy; 2023 My Website. All rights reserved.</p>
+            </div>
+        </footer>
+
+        <script src="script.js"></script>
+
+    </body>
+
+</html>
